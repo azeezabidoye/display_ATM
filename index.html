@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM Card Display</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <main>
+        <section>
+            <div class="row">
+                <div class="form-con">
+                    <form action="#">
+                        <div class="form-row">
+                            <input type="text" name="firstname" id="firstname" placeholder="Firstname">
+                        </div>
+        
+                        <div class="form-row">
+                            <input type="text" name="lastname" id="lastname" placeholder="Lastname">
+                        </div>
+        
+                        <div class="form-row">
+                            <select name="account-type" id="account-type">
+                                <option value="account-options">Select your account type</option>
+                                <option value="savings">Savings</option>
+                                <option value="current">Current</option>
+                                <option value="business">Business</option>
+                            </select>
+                        </div>
+
+                        <div class="form-row">
+                            <input type="submit" value="get new card" id="submit">
+                        </div>
+                    </form>
+                </div>
+
+
+                <div class="atm-con">
+                    
+                    <div class="atm-proxy hidden">
+                        Your card will display here
+                    </div>
+
+                    <div class="atm">
+                        <div class="atm-first-row">
+                            <span class="account-type">Savings</span> 
+                            <img src="bank_logo.png" alt="logo">
+                        </div>
+
+                        <div class="card-num">1234567890987456</div>
+                        <div class="expiry">
+                            <span>Expires:</span>
+                            <span class="expiry-date">05/24</span>
+                        </div>
+
+                        <div class="card-names">
+                            <span class="firstname">Firstname</span>
+                            <span class="lastname">Lastname</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script defer src="script.js"></script>
+</body>
+</html>
